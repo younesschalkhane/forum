@@ -26,19 +26,26 @@
 
 <div class="mb-3">
 <label class="form-label">Email</label>
-<input type="email" class="form-control" placeholder="Enter email address">
+<input type="email" id="email" class="form-control" placeholder="Enter email address">
+<small id="emailError" class="text-danger"></small>
+
 </div>
 
 <div class="mb-3">
 <label class="form-label">Password</label>
-<input type="password" class="form-control" placeholder="Enter password">
+<input type="password"  id="password"  class="form-control" placeholder="Enter password">
+<small id="passwordError" class="text-danger"></small>
+
 </div>
+
 
 <div class="text-end mb-3">
 <a href="#">Forget Password ?</a>
 </div>
 
-<button type="submit" class="btn btn-primary w-100">Login</button>
+<button type="button" onclick="login()" class="btn btn-primary w-100">Login</button>
+
+
 
 <br> <br>
 
@@ -58,7 +65,7 @@
 </div>
 
 
-<script src="main.js"></script>
+<script src="main.js" ></script>
 
 
 
